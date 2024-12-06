@@ -1,21 +1,54 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Reset and Basic Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #636e8b #0c1324; /* For Firefox */
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0c1324;
+  font-family: 'apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
+
+div,
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar for Webkit (Chrome, Safari, newer versions of Opera) */
+*::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: #0c1324; /* Color of the track */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #636e8b; /* Color of the scrollbar thumb */
+  border-radius: 14px !important; /* Rounded corners on the scrollbar thumb */
+}
+
+/* Hide Scrollbar for Webkit browsers, when needed */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Tailwind CSS Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
