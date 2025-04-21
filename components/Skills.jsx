@@ -3,14 +3,19 @@ import SkillItem from './SkillItem';
 
 const SkillsData = [
   {
-    skillName: 'HTML/CSS',
-    skillStrength: 'before:w-[95%]',
-    percentage: 95,
+    skillName: 'C++',
+    percentage: 55,
+    skillStrength: 'before:w-[55%]',
   },
   {
-    skillName: 'Flutter',
-    percentage: 75,
-    skillStrength: 'before:w-[75%]',
+    skillName: 'Python',
+    percentage: 65,
+    skillStrength: 'before:w-[65%]',
+  },
+  {
+    skillName: 'Java',
+    percentage: 35,
+    skillStrength: 'before:w-[35%]',
   },
   {
     skillName: 'Javascript',
@@ -23,42 +28,27 @@ const SkillsData = [
     skillStrength: 'before:w-[65%]',
   },
   {
-    skillName: 'Next Js',
-    percentage: 55,
-    skillStrength: 'before:w-[55%]',
-  },
-  {
-    skillName: 'Tailwind CSS',
-    percentage: 60,
-    skillStrength: 'before:w-[60%]',
-  },
-  {
-    skillName: 'Java',
-    percentage: 35,
-    skillStrength: 'before:w-[35%]',
-  },
-  {
-    skillName: 'Firebase',
-    percentage: 40,
-    skillStrength: 'before:w-[40%]',
-  },
-  {
     skillName: 'React Native',
     percentage: 35,
     skillStrength: 'before:w-[35%]',
   },
   {
-    skillName: 'Python',
-    percentage: 65,
-    skillStrength: 'before:w-[65%]',
+    skillName: 'Next Js',
+    percentage: 55,
+    skillStrength: 'before:w-[55%]',
   },
   {
-    skillName: 'C',
-    percentage: 60,
-    skillStrength: 'before:w-[60%]',
+    skillName: 'Flutter',
+    percentage: 75,
+    skillStrength: 'before:w-[75%]',
   },
   {
-    skillName: 'C++',
+    skillName: 'Express Js',
+    percentage: 55,
+    skillStrength: 'before:w-[55%]',
+  },
+  {
+    skillName: 'Node Js',
     percentage: 55,
     skillStrength: 'before:w-[55%]',
   },
@@ -68,12 +58,7 @@ const SkillsData = [
     skillStrength: 'before:w-[55%]',
   },
   {
-    skillName: 'Express Js',
-    percentage: 55,
-    skillStrength: 'before:w-[55%]',
-  },
-  {
-    skillName: 'Node Js',
+    skillName: 'SQL',
     percentage: 55,
     skillStrength: 'before:w-[55%]',
   }

@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     title: "Luna Ai",
     imageUrl:
-      "https://previews.123rf.com/images/vecstock/vecstock2012/vecstock201201262/162825807-pineapple-and-coconut-fruit-design-of-healthy-organic-food-theme-vector-illustration.jpg",
+      "/public/image.png",
     description: "Description for project 1",
     githubLink: "https://github.com",
     categories: [{ title: "python" }],

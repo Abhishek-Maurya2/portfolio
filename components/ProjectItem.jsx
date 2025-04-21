@@ -11,7 +11,7 @@ const ProjectItem = ({ project, index }) => {
       <div className="max-w-md md:flex-1">
         <Image
           className="rounded-lg mt-5 lg:h-[14rem] object-cover w-full"
-          width={400}
+          width={600}
           height={300}
           src={project.imageUrl}
           alt={project.title}
