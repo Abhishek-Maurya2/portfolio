@@ -20,7 +20,7 @@ const SocialLinksData = [
   {
     id: 3,
     Icon: FaLinkedin,
-    link: 'https://www.linkedin.com/in/abhishekmaurya208/',
+    link: 'https://www.linkedin.com/in/abhishekcse/',
   },
   {
     id: 4,

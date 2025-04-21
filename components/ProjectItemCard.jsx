@@ -19,8 +19,8 @@ const ProjectItemCard = React.memo(
               <Image
                 src={imageUrl}
                 alt={title}
-                width={150}
-                height={150}
+                width={350}
+                height={200}
                 objectFit="cover"
                 className="rounded-lg"
                 loading="lazy"
