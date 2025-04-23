@@ -3,11 +3,11 @@ import React from "react";
 const Spinner = () => (
   <div
     role="status"
-    className="bg-primary w-full md:h-[calc(100vh-6rem)] h-[calc(100vh-5rem)] flex items-center justify-center "
+    className="z-[100] bg-primary w-full md:h-[calc(100vh-6rem)] h-[calc(100vh-5rem)] flex items-center justify-center "
   >
     <svg
       aria-hidden="true"
-      className="inline w-10 h-10 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-white"
+      className="z-[100] inline w-10 h-10 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-white"
       viewBox="0 0 100 101"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,7 @@ const Spinner = () => (
         fill="currentFill"
       />
     </svg>
-    <span className="sr-only text-white">Loading...</span>
+    <span className="z-[100] sr-only text-white">Loading...</span>
   </div>
 );
 

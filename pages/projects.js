@@ -43,17 +43,17 @@ const Projects = () => {
         <Spinner />
       ) : (
         <div
-          className={`bg-primary pb-5 min-h-screen overflow-hidden px-[1.5rem] md:px-[7rem] xl:px-[10rem] text-white ${
+          className={`z-50 bg-primary pb-5 min-h-screen overflow-hidden px-[1.5rem] md:px-[7rem] xl:px-[10rem] text-white ${
             isStickyNav && "mt-[5rem]"
           } `}
         >
-          <h1 className="text-4xl uppercase text-center py-5 pb-10">
+          <h1 className="z-50 text-4xl uppercase text-center py-5 pb-10">
             My Works
           </h1>
-          <div className="flex space-x-5 justify-start sm:justify-center overflow-scroll scrollbar-hide">
+          <div className="z-50 flex space-x-5 justify-start sm:justify-center overflow-scroll scrollbar-hide">
             <div
               onClick={() => handleCategory("All")}
-              className={`inline-block flex-shrink-0  px-4 py-2 text-center uppercase  ${
+              className={`z-50 inline-block flex-shrink-0  px-4 py-2 text-center uppercase  ${
                 selectedCategory == "All"
                   ? "bg-gradient-to-tl from-blue-600 to-cyan-400   "
                   : "border-2  border-cyan-400 hover:bg-cyan-400/5"
@@ -64,7 +64,7 @@ const Projects = () => {
 
             <div
               onClick={() => handleCategory("WebApp")}
-              className={`inline-block px-4 py-2 flex-shrink-0 text-center uppercase  ${
+              className={`z-50 inline-block px-4 py-2 flex-shrink-0 text-center uppercase  ${
                 selectedCategory == "WebApp"
                   ? "bg-gradient-to-tl from-blue-600 to-cyan-400   "
                   : "border-2  border-cyan-400 hover:bg-cyan-400/5"
@@ -75,7 +75,7 @@ const Projects = () => {
 
             <div
               onClick={() => handleCategory("WebPage")}
-              className={`inline-block px-4 py-2 flex-shrink-0 text-center uppercase  ${
+              className={`z-50 inline-block px-4 py-2 flex-shrink-0 text-center uppercase  ${
                 selectedCategory == "WebPage"
                   ? "bg-gradient-to-tl from-blue-600 to-cyan-400  "
                   : "border-2  border-cyan-400 hover:bg-cyan-400/5"
@@ -86,7 +86,7 @@ const Projects = () => {
 
             <div
               onClick={() => handleCategory("python")}
-              className={` px-4 py-2 flex-shrink-0 text-center uppercase  ${
+              className={`z-50  px-4 py-2 flex-shrink-0 text-center uppercase  ${
                 selectedCategory == "python"
                   ? "bg-gradient-to-tl from-blue-600 to-cyan-400"
                   : "border-2  border-cyan-400 hover:bg-cyan-400/5"

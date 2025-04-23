@@ -38,7 +38,7 @@ const Navigation = () => {
   }, [isSticky]);
 
   return (
-    <div className="bg-primary w-full text-white">
+    <div className="z-50 bg-primary w-full text-white">
       <div
         className={`hidden md:flex items-center justify-between h-[5rem] bg-primary  md:px-[3.5rem]   ${
           isSticky &&
@@ -46,12 +46,12 @@ const Navigation = () => {
         }`}
       >
         {/* Desktop */}
-        <div className="cursor-pointer active:scale-90 duration-200">
-          <Link onClick={ScrollToTop} href="/" className="cursor-pointer">
+        <div className="z-50 cursor-pointer active:scale-90 duration-200">
+          <Link onClick={ScrollToTop} href="/" className="z-50 cursor-pointer">
             <Image src="/logo.png" alt="My Logo" width={32} height={32} />
           </Link>
         </div>
-        <ul className="flex flex-row  items-center justify-center">
+        <ul className="z-50 flex flex-row  items-center justify-center">
           {navItems &&
             navItems.map(({ text, link }, index) => (
               <NavItem
@@ -72,7 +72,7 @@ const Navigation = () => {
       </div>
       {/* Mobile */}
       <div className={`md:hidden  bg-primary relative`}>
-        <div className="relative">
+        <div className="z-50 relative">
           <div
             className={`w-full ${
               isSticky &&
@@ -80,7 +80,7 @@ const Navigation = () => {
             } bg-primary flex justify-between h-[5rem] px-[1.5rem]`}
           >
             <div
-              className="cursor-pointer active:scale-90 transition-all duration-200 flex items-center justify-center"
+              className="z-50 cursor-pointer active:scale-90 transition-all duration-200 flex items-center justify-center"
               onClick={ScrollToTop}
             >
               <Link href="/">
@@ -89,10 +89,10 @@ const Navigation = () => {
             </div>
             {/* Toggle Button */}
 
-            <button className="cursor-pointer ">
+            <button className="z-50 cursor-pointer ">
               <MdSegment
                 onClick={handleNavToggle}
-                className="text-white text-4xl active:rotate-90 z-50 transition-all duration-100"
+                className="z-50 text-white text-4xl active:rotate-90 z-50 transition-all duration-100"
               />
             </button>
           </div>
@@ -102,15 +102,15 @@ const Navigation = () => {
               isNavOpen ? "translate-x-0" : "translate-x-[100%]"
             } fixed h-screen min-h-fit overflow-y-scroll w-[60%]   bg-bgNavy scrollbar-hide`}
           >
-            <div className="px-[1.5rem] w-full py-6 text-right">
+            <div className="z-50 px-[1.5rem] w-full py-6 text-right">
               <button>
                 <MdClear
                   onClick={handleNavToggle}
-                  className="text-white text-4xl active:rotate-90 transition-all duration-100"
+                  className="z-50 text-white text-4xl active:rotate-90 transition-all duration-100"
                 />
               </button>
             </div>
-            <ul className="flex  flex-col space-y-5 items-center justify-center w-full">
+            <ul className="z-50 flex  flex-col space-y-5 items-center justify-center w-full">
               {navItems &&
                 navItems.map(({ text, link }, index) => (
                   <NavItem

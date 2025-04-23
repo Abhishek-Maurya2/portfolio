@@ -15,6 +15,7 @@ const DynamicDaysICode = dynamic(() => import("@/components/DaysICode"));
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 
+
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [isStickyNav, setIsStickyNav] = useState(false);
@@ -34,6 +35,7 @@ export default function Home() {
   }, []);
   return (
     <>
+
       <Head>
         <title>Abhishek - Full Stack Developer</title>
         <meta
@@ -68,32 +70,31 @@ export default function Home() {
         </script>
       </Head>
       <main
-        className={`bg-primary h-full max-w-screen overflow-y-hidden flex flex-col items-center justify-center relative text-white px-4 sm:px-[1.5rem] md:px-[3.5rem]`}
+        className={`z-50 bg-primary h-full max-w-screen overflow-y-hidden flex flex-col items-center justify-center relative text-white px-4 sm:px-[1.5rem] md:px-[3.5rem]`}
       >
+        <StarsBackground />
+        <ShootingStars />
         {isLoading ? (
           <Spinner />
         ) : (
           <div
-            className={`md:px-[4.5rem] transition-all duration-300 ease-in-out w-full `}
+            className={`z-50 md:px-[4.5rem] transition-all duration-300 ease-in-out w-full `}
           >
             <div
-              className={`h-[calc(100dvh-5rem)] min-h-fit flex items-center xl:pb-[5rem] justify-center w-full ${
-                isStickyNav && "mt-[5rem]"
-              }`}
+              className={`z-50 h-[calc(100dvh-5rem)] min-h-fit flex items-center xl:pb-[5rem] justify-center w-full ${isStickyNav && "mt-[5rem]"
+                }`}
             >
-              <StarsBackground />
-              <ShootingStars />
               <Header />
             </div>
-            <hr className="h-px mx-auto my-[2rem] bg-gray-100 border-0 rounded dark:bg-gray-700" />
+            <hr className="z-50 h-px mx-auto my-[2rem] bg-gray-100 border-0 rounded dark:bg-gray-700" />
             <DynamicAboutMe />
-            <hr className="h-px mx-auto my-[2rem] bg-gray-100 border-0 rounded dark:bg-gray-700" />
+            <hr className="z-50 h-px mx-auto my-[2rem] bg-gray-100 border-0 rounded dark:bg-gray-700" />
             <DynamicDaysICode />
-            <hr className="h-px mx-auto my-[2rem] bg-gray-100 border-0 rounded dark:bg-gray-700" />
+            <hr className="z-50 h-px mx-auto my-[2rem] bg-gray-100 border-0 rounded dark:bg-gray-700" />
             <DynamicContactMe />
-            <hr className="h-px mx-auto my-[2rem] bg-gray-100 border-0 rounded dark:bg-gray-700" />
+            <hr className="z-50 h-px mx-auto my-[2rem] bg-gray-100 border-0 rounded dark:bg-gray-700" />
             <DynamicSkills />
-            <hr className="h-px mx-auto my-[2rem] bg-gray-100 border-0 rounded dark:bg-gray-700" />
+            <hr className="z-50 h-px mx-auto my-[2rem] bg-gray-100 border-0 rounded dark:bg-gray-700" />
             <DynamicProjects />
           </div>
         )}

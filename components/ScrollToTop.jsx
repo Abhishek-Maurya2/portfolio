@@ -29,7 +29,7 @@ const ScrollToTop = () => {
           data-aos-duration="300"
           data-aos-once="true"
           onClick={scrollToTop}
-          className={`fixed bottom-10 z-20
+          className={`fixed bottom-10 z-50
            opacity-100 translate-y-0
          md:right-[5rem] right-2 active:scale-95 transition-transform bg-slate-100/10  shadow-sm text-white p-2 rounded-full  hover:bg-white/25`}
         >

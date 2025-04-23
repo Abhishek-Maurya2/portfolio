@@ -7,6 +7,7 @@ const projects = [
     githubLink: "https://github.com/Abhishek-Maurya2/Ai-Bot",
     categories: [{ title: "WebApp" }],
     techstack: ["MongoDB", "Node.js", "React.js"],
+    liveLink: "https://ai-bot-frontend-ten.vercel.app/"
   },
   {
     id: 2,
@@ -17,6 +18,7 @@ const projects = [
     githubLink: "https://github.com/Abhishek-Maurya2/sera",
     categories: [{ title: "python" }],
     techstack: ["Python", "Flask", "React Native", "SQL"],
+    liveLink: "https://dharmai.vercel.app/"
   },
   {
     id: 3,
@@ -27,6 +29,7 @@ const projects = [
     githubLink: "https://github.com/Abhishek-Maurya2/Flask-RAG-chatbot",
     categories: [{ title: "python" }],
     techstack: ["Python", "Flask", "React.js", "SQL"],
+    liveLink: "https://dharmai.vercel.app/"
   },
   {
     id: 4,
@@ -37,6 +40,7 @@ const projects = [
     githubLink: "https://github.com/Abhishek-Maurya2/sweets",
     categories: [{ title: "WebPage" }],
     techstack: ["Firebase", "Node.js", "React.js"],
+    liveLink: "https://rollacafetera.vercel.app/"
   },
   {
     id: 5,
@@ -47,6 +51,7 @@ const projects = [
     githubLink: "https://github.com/Abhishek-Maurya2/Speakx",
     categories: [{ title: "WebApp" }],
     techstack: ["MongoDB", "Node.js", "React.js", "Express"],
+    liveLink: "https://speakx-ruddy.vercel.app/"
   },
 ];
 export default projects;
