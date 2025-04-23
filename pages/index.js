@@ -12,6 +12,9 @@ const DynamicProjects = dynamic(() => import("@/components/Projects"));
 const DynamicContactMe = dynamic(() => import("@/components/ContactMe"));
 const DynamicDaysICode = dynamic(() => import("@/components/DaysICode"));
 
+import { ShootingStars } from "@/components/ui/shooting-stars";
+import { StarsBackground } from "@/components/ui/stars-background";
+
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [isStickyNav, setIsStickyNav] = useState(false);
@@ -78,6 +81,8 @@ export default function Home() {
                 isStickyNav && "mt-[5rem]"
               }`}
             >
+              <StarsBackground />
+              <ShootingStars />
               <Header />
             </div>
             <hr className="h-px mx-auto my-[2rem] bg-gray-100 border-0 rounded dark:bg-gray-700" />

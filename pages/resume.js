@@ -4,6 +4,8 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 import { useState, useEffect } from "react";
 import "react-pdf/dist/Page/TextLayer.css";
 import ResumeDownload from "@/components/ResumeDownload";
+import { ShootingStars } from "@/components/ui/shooting-stars";
+import { StarsBackground } from "@/components/ui/stars-background";
 
 const Resume = () => {
   const [scale, setScale] = useState(1);
@@ -73,6 +75,8 @@ const Resume = () => {
         isStickyNav && "mt-[5rem]"
       }`}
     >
+      <StarsBackground />
+      <ShootingStars />
       <h1 className="text-xl md:text-4xl uppercase text-center text-white">
         Resume
       </h1>
